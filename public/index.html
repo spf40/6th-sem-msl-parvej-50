@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Posts List</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <div>
+          <span class="small-label">API COLLECTION</span>
+          <h1>User Posts</h1>
+          <p>Posts fetched from JSONPlaceholder API</p>
+        </div>
+      </header>
+
+      <div class="table-wrapper">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Post ID</th>
+              <th>Title</th>
+              <th>Body</th>
+            </tr>
+          </thead>
+
+          <tbody id="posts-container"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="./first.js"></script>
+  </body>
+</html>

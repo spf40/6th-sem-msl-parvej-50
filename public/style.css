@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #13111c 0%, #1c182b 100%);
+    color: #d1d5db;
+    padding: 50px 5%;
+    min-height: 100vh;
+}
+
+/* Header */
+.page-header {
+    border-bottom: 2px solid rgba(244, 63, 94, 0.25);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.small-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fb7185;
+    background: rgba(244, 63, 94, 0.12);
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin: 6px 0 2px 0;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+/* Table Wrapper Card */
+.table-wrapper {
+    background: #181525;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+}
+
+/* Header */
+.custom-table thead {
+    background: linear-gradient(135deg, #f43f5e 0%, #fb7185 100%);
+    color: #ffffff;
+}
+
+.custom-table th {
+    padding: 18px 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.custom-table th:nth-child(1),
+.custom-table th:nth-child(2) {
+    text-align: center;
+}
+
+/* Rows */
+.custom-table td {
+    padding: 18px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+/* Alternating rows */
+.custom-table tbody tr:nth-child(odd) {
+    background: rgba(24, 21, 37, 0.6);
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background: rgba(30, 27, 46, 0.4);
+}
+
+/* Hover */
+.custom-table tbody tr:hover {
+    background: rgba(244, 63, 94, 0.1);
+}
+
+/* IDs */
+.custom-table td:nth-child(1),
+.custom-table td:nth-child(2) {
+    color: #fb7185;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Title */
+.custom-table td:nth-child(3) {
+    color: #f3f4f6;
+    font-weight: 600;
+}
+
+/* Body */
+.custom-table td:nth-child(4) {
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .custom-table {
+        min-width: 800px;
+    }
+}
